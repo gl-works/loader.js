@@ -1,7 +1,7 @@
 {
   "name": "loader.js",
   "main": "loader.js",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "homepage": "https://github.com/stefanpenner/loader.js",
   "authors": [
     "Stefan Penner <stefan.penner@gmail.com>"
