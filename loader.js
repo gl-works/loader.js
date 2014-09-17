@@ -20,6 +20,16 @@ var embdef, embreqModule, embreq, embreqjs;
       callback = deps;
       deps     =  [];
     }
+
+    if (registry[name]) {
+      if (registry[name].callback === callback) {
+        return
+      }
+      if (seen[name]) {
+        console.warn('redefined', name);
+        delete seen[name];
+      }
+    }
   
     registry[name] = {
       deps: deps,
